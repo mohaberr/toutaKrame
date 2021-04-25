@@ -2,7 +2,9 @@
 class Ingredients{
  private $_idIngredient;
  private $_libelleIngredient;
- private $_uniteMesure;
+ private $_quantite;
+ private $_idRecette;
+ private $_idUnite;
       /* ****************Accesseurs***************** */
 public function getIdIngredient(){ 
  return $this->_idIngredient;
@@ -16,11 +18,23 @@ public function getLibelleIngredient(){
 public function setLibelleIngredient($libelleIngredient){ 
 $this->_libelleIngredient =$libelleIngredient;
 }
-public function getUniteMesure(){ 
- return $this->_uniteMesure;
+public function getQuantite(){ 
+ return $this->_quantite;
 }
-public function setUniteMesure($uniteMesure){ 
-$this->_uniteMesure =$uniteMesure;
+public function setQuantite($quantite){ 
+$this->_quantite =$quantite;
+}
+public function getIdRecette(){ 
+ return $this->_idRecette;
+}
+public function setIdRecette($idRecette){ 
+$this->_idRecette =$idRecette;
+}
+public function getIdUnite(){ 
+ return $this->_idUnite;
+}
+public function setIdUnite($idUnite){ 
+$this->_idUnite =$idUnite;
 }
   /* ****************Constructeur***************** */
 public function __construct(array $options = []){

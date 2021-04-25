@@ -3,19 +3,23 @@ class IngredientsManager{
 //******************************** select ****************************
 public static function add(Ingredients $cl){
 $db=DbConnect::getDb();
-$requete = $db->prepare("INSERT INTO Ingredients(libelleIngredient,uniteMesure)VALUES (:libelleIngredient,:uniteMesure)");
+$requete = $db->prepare("INSERT INTO Ingredients(libelleIngredient,quantite,idRecette,idUnite)VALUES (:libelleIngredient,:quantite,:idRecette,:idUnite)");
 $requete->bindValue(':libelleIngredient',$cl->getLibelleIngredient());
-$requete->bindValue(':uniteMesure',$cl->getUniteMesure());
+$requete->bindValue(':quantite',$cl->getQuantite());
+$requete->bindValue(':idRecette',$cl->getIdRecette());
+$requete->bindValue(':idUnite',$cl->getIdUnite());
 $res = $requete->execute();
 }
 //******************************** UPDATE ****************************
 public static function UPDATE(Ingredients $cl){
 $db=DbConnect::getDb();
-$requete = $db->prepare("UPDATE Ingredients SET idIngredient=:idIngredient,libelleIngredient=:libelleIngredient,uniteMesure=:uniteMesure WHERE idIngredient=:idIngredient");
+$requete = $db->prepare("UPDATE Ingredients SET idIngredient=:idIngredient,libelleIngredient=:libelleIngredient,quantite=:quantite,idRecette=:idRecette,idUnite=:idUnite WHERE idIngredient=:idIngredient");
 
 $requete->bindValue(':idIngredient',$cl->getIdIngredient());
 $requete->bindValue(':libelleIngredient',$cl->getLibelleIngredient());
-$requete->bindValue(':uniteMesure',$cl->getUniteMesure());
+$requete->bindValue(':quantite',$cl->getQuantite());
+$requete->bindValue(':idRecette',$cl->getIdRecette());
+$requete->bindValue(':idUnite',$cl->getIdUnite());
 $res = $requete->execute();
 }
 //******************************** DELETE ****************************
