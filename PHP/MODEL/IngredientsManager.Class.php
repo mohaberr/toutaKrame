@@ -53,4 +53,22 @@ $res = $requete->execute();
             }
             return $listeIngredients;
         }
-    }
+    
+//******************************** FINDBYLIBELLE ***********************
+public static function findByLibelle($libelleIngredient)
+        {
+            $db = DbConnect::getDb();
+            $libelleIngredient = stristr ($libelleIngredient.";" , ";",true);
+            $q = $db->query("SELECT * FROM Utilisateurs WHERE libelleIngredient='". $libelleIngredient ."'");
+            $results = $q->fetch(PDO::FETCH_ASSOC);
+            if ($results != false)
+            {
+                return new Ingredients($results);
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+}

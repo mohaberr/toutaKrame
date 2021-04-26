@@ -46,6 +46,7 @@ $res = $requete->execute();
         {
             $db=DbConnect::getDb();
             $requete = $db->query('SELECT * FROM Contenus');
+            $listeContenus=[];
             while($donnees = $requete->fetch(PDO::FETCH_ASSOC))
             {
                 if ( $donnees !=false)
@@ -55,4 +56,21 @@ $res = $requete->execute();
             }
             return $listeContenus;
         }
-    }
+//******************************** GETBYIDRECETTE *********************
+public static function getByIdRecette($id)
+        {
+            $db=DbConnect::getDb();
+            $id=(int)$id;
+            $listeContenus=[];
+            $requete = $db->query('SELECT * FROM Contenus WHERE idRecette =' .$id);
+            while($donnees = $requete->fetch(PDO::FETCH_ASSOC))
+            {
+                if ( $donnees !=false)
+                {
+                    $listeContenus[] = new Contenus($donnees);
+                }
+            }
+            return $listeContenus;
+        }
+
+}

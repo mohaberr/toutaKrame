@@ -19,4 +19,9 @@
    $var=usersManager::findByPseudo($truc->getPseudoUser());
    var_dump($var);
   
+    // $list=ContenusManager::getByIdRecette(2);
+    // var_dump($list);
+    // ContenusManager::delete($truc);
+
+    
 ?>
