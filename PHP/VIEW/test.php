@@ -10,5 +10,8 @@
     // var_dump($list);
     // ContenusManager::delete($truc);
 
-    
+    $test=IngredientsManager::findByLibelle("sel");
+    var_dump($test);
+
+
 ?>

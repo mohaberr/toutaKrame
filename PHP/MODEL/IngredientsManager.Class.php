@@ -59,7 +59,7 @@ public static function findByLibelle($libelleIngredient)
         {
             $db = DbConnect::getDb();
             $libelleIngredient = stristr ($libelleIngredient.";" , ";",true);
-            $q = $db->query("SELECT * FROM Utilisateurs WHERE libelleIngredient='". $libelleIngredient ."'");
+            $q = $db->query("SELECT * FROM Ingredients WHERE libelleIngredient='". $libelleIngredient ."'");
             $results = $q->fetch(PDO::FETCH_ASSOC);
             if ($results != false)
             {

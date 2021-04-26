@@ -1,11 +1,11 @@
-html, body, header, main, div, footer{
+html, body, header, main, div, footer, form{
     margin: 0;
     padding: 0;
     display: flex;
     flex:1;
 }
 
-.column, body, header{
+.column, body, header, main{
     flex-direction: column;
 }
 
@@ -22,6 +22,3 @@ html, body, header, main, div, footer{
     height: 5vh;
 }
 
-.titre{
-    font-family: ;
-}
