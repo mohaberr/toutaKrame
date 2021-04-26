@@ -55,4 +55,29 @@ $res = $requete->execute();
             }
             return $listeUsers;
         }
+    
+    //******************************** findByPseudo ****************************
+    public static function findByPseudo($pseudo)
+    {
+		$db = DbConnect::getDb();
+        if (strstr($pseudo,";")=== false) // s'il n'y a pas de ; , je lance la requete
+        {
+            $q = $db->query("SELECT * FROM users WHERE pseudoUser ='" . $pseudo . "'");
+            $results = $q->fetch(PDO::FETCH_ASSOC);
+            if ($results != false)
+            {
+                return new users($results);
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            // on arrete l'action  
+            die();
+            
+        }
     }
+}
