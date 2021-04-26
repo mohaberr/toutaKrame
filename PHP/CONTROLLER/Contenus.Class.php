@@ -1,26 +1,33 @@
 <?php
-class Ingredients{
+class Contenus{
+ private $_idContenu;
  private $_idIngredient;
- private $_libelleIngredient;
- private $_idUnite;
+ private $_idRecette;
+ private $_quantite;
       /* ****************Accesseurs***************** */
+public function getIdContenu(){ 
+ return $this->_idContenu;
+}
+public function setIdContenu($idContenu){ 
+$this->_idContenu =$idContenu;
+}
 public function getIdIngredient(){ 
  return $this->_idIngredient;
 }
 public function setIdIngredient($idIngredient){ 
 $this->_idIngredient =$idIngredient;
 }
-public function getLibelleIngredient(){ 
- return $this->_libelleIngredient;
+public function getIdRecette(){ 
+ return $this->_idRecette;
 }
-public function setLibelleIngredient($libelleIngredient){ 
-$this->_libelleIngredient =$libelleIngredient;
+public function setIdRecette($idRecette){ 
+$this->_idRecette =$idRecette;
 }
-public function getIdUnite(){ 
- return $this->_idUnite;
+public function getQuantite(){ 
+ return $this->_quantite;
 }
-public function setIdUnite($idUnite){ 
-$this->_idUnite =$idUnite;
+public function setQuantite($quantite){ 
+$this->_quantite =$quantite;
 }
   /* ****************Constructeur***************** */
 public function __construct(array $options = []){
