@@ -22,3 +22,6 @@ html, body, header, main, div, footer, form{
     height: 5vh;
 }
 
+.titre{
+    justify-content: center;
+}
