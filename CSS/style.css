@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 html, body, header, main, div, footer, form{
     margin: 0;
     padding: 0;
@@ -24,4 +25,6 @@ html, body, header, main, div, footer, form{
 
 .titre{
     justify-content: center;
+    font-family:'Bangers', cursive;
+    font-size: 3em;
 }
