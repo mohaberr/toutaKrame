@@ -10,7 +10,8 @@ DbConnect::init();
 session_start(); // initialise la variable de Session
 
 $routes=[
-    "default"=>["PHP/VIEW/","ListeRecettes","Acceuil"]
+    "default"=>["PHP/VIEW/","ListeRecettes","Acceuil"],
+    "test"=>["PHP/VIEW/","test","aaa"]
 ];
 
 if (isset($_GET["codePage"]))

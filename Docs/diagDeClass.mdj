@@ -758,6 +758,26 @@
 										},
 										{
 											"_type": "UMLAttributeView",
+<<<<<<< HEAD
+											"_id": "AAAAAAF5DUeByV3Xujs=",
+											"_parent": {
+												"$ref": "AAAAAAF5DQom40rrUs0="
+											},
+											"model": {
+												"$ref": "AAAAAAF5DUeBxF3UJCA="
+											},
+											"font": "Arial;13;0",
+											"left": 93,
+											"top": 244,
+											"width": 123.525390625,
+											"height": 13,
+											"text": "+idRecette",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+=======
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 											"_id": "AAAAAAF5DUeZil3d0Vo=",
 											"_parent": {
 												"$ref": "AAAAAAF5DQom40rrUs0="
@@ -767,7 +787,11 @@
 											},
 											"font": "Arial;13;0",
 											"left": 93,
+<<<<<<< HEAD
+											"top": 259,
+=======
 											"top": 244,
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 											"width": 123.525390625,
 											"height": 13,
 											"text": "+idUnite",
@@ -778,7 +802,11 @@
 									"left": 88,
 									"top": 209,
 									"width": 133.525390625,
+<<<<<<< HEAD
+									"height": 68
+=======
 									"height": 53
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -829,7 +857,11 @@
 									],
 									"font": "Arial;13;0",
 									"left": 88,
+<<<<<<< HEAD
+									"top": 277,
+=======
 									"top": 262,
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 									"width": 133.525390625,
 									"height": 10
 								},
@@ -1244,7 +1276,10 @@
 											"model": {
 												"$ref": "AAAAAAF5DQ9lLkvj3CM="
 											},
+<<<<<<< HEAD
+=======
 											"visible": false,
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 											"font": "Arial;13;0",
 											"left": 429,
 											"top": 260,
@@ -1258,7 +1293,11 @@
 									"left": 424,
 									"top": 225,
 									"width": 81.1826171875,
+<<<<<<< HEAD
+									"height": 53
+=======
 									"height": 38
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1271,7 +1310,11 @@
 									},
 									"font": "Arial;13;0",
 									"left": 424,
+<<<<<<< HEAD
+									"top": 278,
+=======
 									"top": 263,
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 									"width": 81.1826171875,
 									"height": 10
 								},
@@ -2338,6 +2381,8 @@
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAF5DT/VKFwI26A="
 							}
+<<<<<<< HEAD
+=======
 						},
 						{
 							"_type": "UMLClassView",
@@ -2786,6 +2831,7 @@
 							"templateParameterCompartment": {
 								"$ref": "AAAAAAF5DYWqLt3alb0="
 							}
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						}
 					]
 				},
@@ -2899,8 +2945,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQjCH0qLkVA="
 							},
+<<<<<<< HEAD
+							"name": "idRecette"
+=======
 							"name": "idRecette",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2908,8 +2958,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQjCH0qLkVA="
 							},
+<<<<<<< HEAD
+							"name": "titreRecette"
+=======
 							"name": "titreRecette",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2917,8 +2971,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQjCH0qLkVA="
 							},
+<<<<<<< HEAD
+							"name": "tempRecette"
+=======
 							"name": "tempRecette",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2926,8 +2984,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQjCH0qLkVA="
 							},
+<<<<<<< HEAD
+							"name": "niveauDifRecette"
+=======
 							"name": "niveauDifRecette",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2935,8 +2997,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQjCH0qLkVA="
 							},
+<<<<<<< HEAD
+							"name": "imageRecette"
+=======
 							"name": "imageRecette",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2944,8 +3010,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQjCH0qLkVA="
 							},
+<<<<<<< HEAD
+							"name": "preparationRecette"
+=======
 							"name": "preparationRecette",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -2953,8 +3023,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQjCH0qLkVA="
 							},
+<<<<<<< HEAD
+							"name": "idUser"
+=======
 							"name": "idUser",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						}
 					],
 					"operations": [
@@ -3041,8 +3115,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQn2okq4jPQ="
 							},
+<<<<<<< HEAD
+							"name": "idUser"
+=======
 							"name": "idUser",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3050,8 +3128,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQn2okq4jPQ="
 							},
+<<<<<<< HEAD
+							"name": "pseudoUser"
+=======
 							"name": "pseudoUser",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3059,8 +3141,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQn2okq4jPQ="
 							},
+<<<<<<< HEAD
+							"name": "mdpUser"
+=======
 							"name": "mdpUser",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3068,8 +3154,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQn2okq4jPQ="
 							},
+<<<<<<< HEAD
+							"name": "idRole"
+=======
 							"name": "idRole",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						}
 					],
 					"operations": [
@@ -3097,8 +3187,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQom40rj+SE="
 							},
+<<<<<<< HEAD
+							"name": "idIngredient"
+=======
 							"name": "idIngredient",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3106,8 +3200,20 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQom40rj+SE="
 							},
+<<<<<<< HEAD
+							"name": "libelleIngredient"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAF5DUeBxF3UJCA=",
+							"_parent": {
+								"$ref": "AAAAAAF5DQom40rj+SE="
+							},
+							"name": "idRecette"
+=======
 							"name": "libelleIngredient",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3115,8 +3221,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQom40rj+SE="
 							},
+<<<<<<< HEAD
+							"name": "idUnite"
+=======
 							"name": "idUnite",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						}
 					],
 					"operations": [
@@ -3152,8 +3262,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQp/eEsN07c="
 							},
+<<<<<<< HEAD
+							"name": "idRole"
+=======
 							"name": "idRole",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3161,8 +3275,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQp/eEsN07c="
 							},
+<<<<<<< HEAD
+							"name": "libelleRole"
+=======
 							"name": "libelleRole",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						}
 					]
 				},
@@ -3250,8 +3368,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQq73Es3J64="
 							},
+<<<<<<< HEAD
+							"name": "idUnite"
+=======
 							"name": "idUnite",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3259,8 +3381,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQq73Es3J64="
 							},
+<<<<<<< HEAD
+							"name": "libelleUnite"
+=======
 							"name": "libelleUnite",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						},
 						{
 							"_type": "UMLAttribute",
@@ -3268,8 +3394,12 @@
 							"_parent": {
 								"$ref": "AAAAAAF5DQq73Es3J64="
 							},
+<<<<<<< HEAD
+							"name": "idRole"
+=======
 							"name": "idRole",
 							"type": ""
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 						}
 					]
 				},
@@ -3409,6 +3539,8 @@
 							"name": "CRUD"
 						}
 					]
+<<<<<<< HEAD
+=======
 				},
 				{
 					"_type": "UMLClass",
@@ -3477,6 +3609,7 @@
 							"name": "getByIdRecette"
 						}
 					]
+>>>>>>> 08c73abd5ab4dd52dc28b29a19776d8ddf483f34
 				}
 			]
 		}
