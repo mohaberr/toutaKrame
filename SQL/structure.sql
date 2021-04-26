@@ -35,11 +35,11 @@ CREATE TABLE Users(
 DROP TABLE IF EXISTS Recettes;
 CREATE TABLE Recettes(
         idRecette          Int  Auto_increment  NOT NULL PRIMARY KEY,
-        titreRecette       Varchar (50) NOT NULL ,
-        tempRecette        Time NOT NULL ,
-        niveauDifRecette   Int NOT NULL ,
-        imageRecette       Varchar (50) NOT NULL ,
-        preparationRecette Varchar (1000) NOT NULL ,
+        titreRecette       Varchar (50) ,
+        tempRecette        Time  ,
+        niveauDifRecette   Int  ,
+        imageRecette       Varchar (50)  ,
+        preparationRecette Varchar (1000)  ,
         idUser             Int NOT NULL
 
 )ENGINE=InnoDB;
