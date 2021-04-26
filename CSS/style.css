@@ -5,7 +5,7 @@ html, body, header, main, div, footer{
     flex:1;
 }
 
-.column, body{
+.column, body, header{
     flex-direction: column;
 }
 
@@ -20,4 +20,8 @@ html, body, header, main, div, footer{
 .spaceHorizon{
     flex: none;
     height: 5vh;
+}
+
+.titre{
+    font-family: ;
 }
