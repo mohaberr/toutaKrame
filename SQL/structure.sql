@@ -58,21 +58,38 @@ CREATE TABLE Unites(
 # Table: Ingredients
 #------------------------------------------------------------
 
+
 DROP TABLE IF EXISTS Ingredients;
 CREATE TABLE Ingredients(
         idIngredient      Int  Auto_increment  NOT NULL PRIMARY KEY,
         libelleIngredient Varchar (50) NOT NULL ,
         quantite          Float NOT NULL ,
-        idRecette         Int NOT NULL ,
         idUnite           Int NOT NULL
 )ENGINE=InnoDB;
 
- alter Table Ingredients add 
- 	CONSTRAINT Ingredients_Recettes_FK FOREIGN KEY (idRecette) REFERENCES Recettes(idRecette)
-       ,add CONSTRAINT Ingredients_Unites0_FK FOREIGN KEY (idUnite) REFERENCES Unites(idUnite);
+#------------------------------------------------------------
+# Table: contenus
+#------------------------------------------------------------
+
+CREATE TABLE contenus(
+        idContenu int auto_increment not null primary key ,
+        idIngredient Int NOT NULL ,
+        idRecette    Int NOT NULL ,
+        quantite     Float NOT NULL
+
+)ENGINE=InnoDB;
+
+
+ alter Table Ingredients 
+       add CONSTRAINT Ingredients_Unites0_FK FOREIGN KEY (idUnite) REFERENCES Unites(idUnite);
 
  alter Table Recettes add 
     	CONSTRAINT Recettes_users_FK FOREIGN KEY (idUser) REFERENCES Users(idUser);
 alter Table Users add 
 	CONSTRAINT Users_Roles_FK FOREIGN KEY (idRole) REFERENCES Roles(idRole);
+        
+ alter Table contenus add 
+        CONSTRAINT contenus_Ingredients_FK FOREIGN KEY (idIngredient) REFERENCES Ingredients(idIngredient),
+	add CONSTRAINT contenus_Recettes0_FK FOREIGN KEY (idRecette) REFERENCES Recettes(idRecette);
+
         
