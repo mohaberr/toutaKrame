@@ -12,7 +12,8 @@ session_start(); // initialise la variable de Session
 $routes=[
     "default"=>["PHP/VIEW/","ListeRecettes","Acceuil"],
     "test"=>["PHP/VIEW/","test","aaa"],
-    "Connexion"=>["PHP/VIEW/","formConnexion","Connexion"]
+    "Connexion"=>["PHP/VIEW/","formConnexion","Connexion"],
+    "actionConnexion"=>["PHP/CONTROLLER/Action/","actionConnexion","Erreur"]
 ];
 
 if (isset($_GET["codePage"]))

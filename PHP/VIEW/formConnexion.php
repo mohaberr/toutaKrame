@@ -17,17 +17,17 @@
                         <div>
                             <label for="mdp">MDP :</label>
                         </div>
-                        
-                        <input type="password" name="mdp" required />
-
+                        <div>
+                            <input type="password" name="mdp" required />
+                        </div>
                     </div>
                     <div>
-
-                        <a href="index.php?codePage=default">Annuler</a>    
-
-
-                        <button type="submit">Connexion</button>
-
+                        <div>
+                            <a href="index.php?codePage=default">Annuler</a>    
+                        </div>
+                        <div>
+                            <button type="submit">Connexion</button>
+                        </div>
                     </div>
                 </div>
             </form>
