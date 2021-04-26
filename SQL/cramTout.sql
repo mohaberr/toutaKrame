@@ -1,7 +1,7 @@
 #------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
-DROP DATABASE toutaKrame;
+DROP DATABASE IF EXISTS toutaKrame;
 CREATE DATABASE IF NOT EXISTS toutaKrame ;
 USE toutaKrame;
 
