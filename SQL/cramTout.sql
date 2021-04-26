@@ -1,7 +1,11 @@
 #------------------------------------------------------------
 #        Script MySQL.
 #------------------------------------------------------------
+<<<<<<< HEAD
 DROP DATABASE if EXISTS toutaKrame;
+=======
+DROP DATABASE IF EXISTS toutaKrame;
+>>>>>>> fd9e3ab87fd835ae9ceb454c1f09dada03b68a31
 CREATE DATABASE IF NOT EXISTS toutaKrame ;
 USE toutaKrame;
 

@@ -1,0 +1,23 @@
+html, body, header, main, div, footer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex:1;
+}
+
+.column, body{
+    flex-direction: column;
+}
+
+.mini{
+    flex: 0.2;
+}
+
+.demi{
+    flex: 0.5;
+}
+
+.spaceHorizon{
+    flex: none;
+    height: 5vh;
+}
