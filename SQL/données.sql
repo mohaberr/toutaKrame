@@ -12,10 +12,10 @@ INSERT INTO `users` (`idUser`, `pseudoUser`, `mdpUser`, `idRole`) VALUES
 (3, 'kol', '0000', 1),
 (4, 'am', '0000', 1);
 
-INSERT INTO `recettes` (`idRecette`, `titreRecette`, `tempRecette`, `niveauDifRecette`, `imageRecette`, `preparationRecette`, `idUser`) VALUES
-(1, 'patte', '00:00:10', 2, 'aaa', 'bonjour', 1),
-(2, 'thon', '00:00:20', 2, 'uu', 'fffff', 2);
-
+INSERT INTO `ingredients` (`idIngredient`, `libelleIngredient`, `idUnite`) VALUES
+(1, 'poivre', 1),
+(2, 'sel', 1),
+(3, 'farine', 2);
 INSERT INTO `ingredients` (`idIngredient`, `libelleIngredient`, `quantite`, `idUnite`) VALUES
 (1, 'poivre', 2, 1),
 (2, 'sel', 2, 1),
