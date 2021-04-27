@@ -1,12 +1,12 @@
 <main>
-    <div class="spaceHorizon"></div>
+    <div class="bigSpaceHorizon"></div>
     <div>
         <div></div>
         <div>
             <form action="index.php?codePage=actionConnexion" method="post">
                 <div class="column">
                     <div>
-                        <div>
+                        <div class="centre">
                             <label for="pseudo">Pseudo :</label>
                         </div>
                         <div>
@@ -14,7 +14,7 @@
                         </div>
                     </div>
                     <div>
-                        <div>
+                        <div  class="centre">
                             <label for="mdp">MDP :</label>
                         </div>
                         <div>
@@ -34,4 +34,5 @@
         </div>
         <div></div>
     </div>
+    <div class="bigSpaceHorizon"></div>
 </main>

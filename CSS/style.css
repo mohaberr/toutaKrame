@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
-html, body, header, main, div, footer, form{
+html, body, header, main, div, footer, form, a, button, input{
     margin: 0;
     padding: 0;
     display: flex;
     flex:1;
+    color: rgb(255, 217, 0);
 }
 
 .column, body, header, main{
@@ -23,8 +24,47 @@ html, body, header, main, div, footer, form{
     height: 5vh;
 }
 
+.bigSpaceHorizon{
+    flex: none;
+    height: 34vh;
+}
+
+footer{
+    flex: none;
+    height: 10vh;
+}
+
 .titre{
-    justify-content: center;
     font-family:'Bangers', cursive;
     font-size: 3em;
+}
+
+.titre, .centre, button, a{
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer{
+    background-color: rgb(194, 71, 0);
+}
+
+a, button{
+    background-color: rgb(92, 44, 0);
+    border: none;
+    border-radius: 0.5vh;
+    margin: 5px;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .2),
+    inset -2px -2px 3px rgba(0, 0, 0, .2);
+}
+
+a:active, button:active{
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, .2),
+    inset -2px -2px 3px rgba(255, 255, 255, .2);
+}
+
+main{
+    background-image: url(../IMG/a7b7357d-e2bc-4efb-98e8-197e355f55c5-large16x9_safdfirestove.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center ;
 }
