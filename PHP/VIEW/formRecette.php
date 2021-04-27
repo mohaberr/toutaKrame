@@ -1,4 +1,6 @@
+
 <?php
+
 $mode = $_GET['mode'];
 echo '<div class="demiPage colonne">';
 echo '<div id="DivSousTitre">';
@@ -7,28 +9,28 @@ echo '<div id="DivSousTitre">';
 switch ($mode) {
     case "ajout":
         {
-            echo '<h5>Ajouter une nouvelle catégorie</h5></div>
+            echo '
 	<form id="formulaire" method="post" action="index.php?codePage=actionRecette&mode=ajoutRecette">';
             // Quand le formulaire sera soumit par clic sur le bouton, les informations qu il contient seront stockées dans la variable $_POST, parce que la methode post a été sélectionnée
             break;
         }
     case "edit":
         {
-            echo '<h5>Editer une catégorie</h5></div>
+            echo '
 	<form id="formulaire" method="post" >';
             // Quand le formulaire sera soumit par clic sur le bouton, les informations qu il contient seront stockées dans la variable $_POST, parce que la methode post a été sélectionnée
             break;
         }
     case "modif":
         {
-            echo '<h5>Modifier une catégorie</h5></div>
+            echo '
 	<form id="formulaire" method="post" action="index.php?codePage=actionRecette&mode=modifRecette">';
             // Quand le formulaire sera soumit par clic sur le bouton, les informations qu il contient seront stockées dans la variable $_POST, parce que la methode post a été sélectionnée
             break;
         }
     case "delete":
         {
-            echo '<h5>Supprimer une catégorie</h5></div>
+            echo '
             <div class="erreur">Les produits dépendants vont être supprimés</div>
 	<form id="formulaire" method="post" action="index.php?codePage=actionRecette&mode=delRecette">';
             // Quand le formulaire sera soumit par clic sur le bouton, les informations qu il contient seront stockées dans la variable $_POST, parce que la methode post a été sélectionnée
@@ -44,44 +46,80 @@ if (isset($_GET['id'])) {
 // il faut que les name des input correspondent aux attributs de la class
 // si on a les informations (cas edit, modif, supp) on les mets à jour
 ?>
+<main>
+    <div></div>
+<div class=column>
 <input type="hidden" name="idRecette" <?php if (isset($prod)) echo 'value="'.$prod->getIdRecette().'"'; ?> >
-<div class="ligneDetail">
-    <div class="libelleInput"> Libelle :</div>
-    <div class="input"> <input type="text" name="libelleRecette"
-            <?php if (isset($prod)) echo 'value="'.$prod->getLibelleRecette().'"';  if ($mode=="delete" || $mode=="edit") echo 'disabled';?> ></div>
-</div>
+<label for="titreRecette">
+titre :
+</label>
+<input type="text" name="titreRecette" <?php if (isset($prod))echo 'value ="'.$prod->getTitreRecette().'"';if (($mode=="detail")||($mode=="suppr")) echo "disabled";?>>
+<label for="tempRecette">
+temp Recette :
+</label>
+<input type="time" min="00:00" max="3:00" name="tempRecette" <?php if (isset($prod))echo 'value ="'.$prod->getTempRecette().'"';if (($mode=="detail")||($mode=="suppr")) echo "disabled";?>>
+<label for="niveauDifRecette">
+Difficulté à raté :
+</label>
+<input type="number" min="0" max="5" name="niveauDifRecette" <?php if (isset($prod))echo 'value ="'.$prod->getNiveauDifRecette().'"';if (($mode=="detail")||($mode=="suppr")) echo "disabled";?>>
 
-<div class="centre">
-                            <label for="ingredient">Choix d'ingerdient</label>
-                        </div>
-                        <div>
-                        <select name="ingredient" id="">
-                                  <?php $listeIngredient = ContenusManager::getByIdRecette(2);
-                                //  var_dump($listeIngredient);
-                                   foreach ($listeIngredient as $key) {
-                                          $libelleIng= IngredientsManager:: findById ($key->getIdIngredient());
-                                      echo  "<option>". $libelleIng->getLibelleIngredient()."</option>";
-                                                                            
-                                   } ;
-                                        
-                                   ?>
-                            </select>
-                        </div>
+<label for="ingredients">
+    ingredient
+</label>
+<?php
+      if (isset($prod)) {  
+          if ($mode == "detail"||$mode == "suppr") {
+            $disabled="disabled";
+          }
+          else {
+            $disabled="";
+          }
+       $listeContenu=ContenusManager:: getByIdRecette($_GET['id']);
+       foreach ($listeContenu as $contenu ) {
+        echo "<select ".$disabled." name =idIngredient id=ingredient>";
+        $listeIngredient= IngredientsManager::getList();
+        foreach ($listeIngredient as $Ingredient) {
+            $contenu->getIdIngredient()==$Ingredient->getIdIngredient()?$selected="selected":$selected="";
+            
+            echo "<option ".$selected." value ='".$Ingredient->getIdIngredient()."' >".$Ingredient->getLibelleIngredient()."</option>";
+        }
+        echo "</select>";
+       }
+      }
+      else {
+          echo "<select name =idIngredient id=ingredient>";
+         $listeIngredient= IngredientsManager::getList();
+         foreach ($listeIngredient as $Ingredient) {
+             echo "<option value ='".$Ingredient->getIdIngredient()."' >".$Ingredient->getLibelleIngredient()."</option>";
+         }
+         echo "</select>";
+     }
+?>
+
+
+
+
+<label for="preparationRecette">
+preparation de la Recette :
+</label>
+<input type="text" name="preparationRecette" <?php if (isset($prod))echo 'value ="'.$prod->getPreparationRecette().'"';if (($mode=="detail")||($mode=="suppr")) echo "disabled";?>>
+
+                       
 
 <?php 
 // en fonction du mode, on affiche les boutons utils
 	switch ($mode) {
 		case "ajout":
 			{
-				echo '<div class="ligneDetail"><input type="submit" value="Ajouter" class=" crudBtn crudBtnEdit"/>'; break;
+				echo '<div class="ligneDetail"><input type="submit" value="Ajout" class=" bouton"/>'; break;
 			}
 		case "modif":
 			{
-				echo '<div class="ligneDetail"><input type="submit" value="Modifier" class=" crudBtn crudBtnModif"/>'; break;
+				echo '<div class="ligneDetail"><input type="submit" value="Modif" class="bouton"/>'; break;
 			}
 		case "delete":
 			{
-				echo '<div class="ligneDetail"><input type="submit" value="Supprimer" class=" crudBtn crudBtnSuppr" />'; break;
+				echo '<div class="ligneDetail"><input type="submit" value="Suppr" class=" bouton" />'; break;
 			}
         
         default:
@@ -92,46 +130,8 @@ if (isset($_GET['id'])) {
 // dans tous les cas, on met le bouton annuler
     ?>
     <a href="index.php?codePage=listeRecettes" class=" crudBtn crudBtnRetour">Annuler</a>
+    
 </div>
-</div>
-<!-- </form>
-<main>
-    <div class="bigSpaceHorizon"></div>
-    <div>
-        <div></div>
-        <div>
-            <form action="index.php?codePage=actionIngredient" method="GET">
-                <div class="column">
-                    <div>
-                        <div class="centre">
-                            <label for="ingredient">Choix d'ingerdient</label>
-                        </div>
-                        <div>
-                        <select name="ingredient" id="">
-                                  <!--// <?php// $listeIngredient = ContenusManager::getByIdRecette(2); -->
-                                //  var_dump($listeIngredient);
-                                //    foreach ($listeIngredient as $key) {
-                                //           $libelleIng= IngredientsManager:: findById ($key->getIdIngredient());
-                                //       echo  "<option>". $libelleIng->getLibelleIngredient()."</option>";
-                                                                            
-                                 //  } ;
-                                        
-                                //    ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <a href="index.php?codePage=default">Annuler</a>    
-                        </div>
-                        <div>
-                            <button type="submit">Confirmation</button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <div></div>
-    </div>
-    <div class="bigSpaceHorizon"></div>
-</main> -->
+
+<div></div>
+</main>
