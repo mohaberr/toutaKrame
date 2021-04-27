@@ -17,7 +17,7 @@
 
                     echo'
                     <div class="spaceHorizon"></div>
-                    <article>
+                    <div class="article column">
                         <div class="titre unEmCinq">'.$recette->getTitreRecette().'</div>
                         <div class="spaceHorizon"></div>
                         <div> Difficulté à raté :'.$etoile.'</div>
@@ -41,7 +41,7 @@
                             <div class="mini"></div>
                         </div>
                         <div class="spaceHorizon"></div>
-                    </article>';
+                    </div>';
                 }
                 
             ?>
