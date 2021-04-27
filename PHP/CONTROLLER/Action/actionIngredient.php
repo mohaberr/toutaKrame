@@ -1,0 +1,4 @@
+<?php
+
+$ingerdient= new ingredient
+?>

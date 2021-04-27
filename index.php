@@ -16,7 +16,9 @@ $routes=[
     "actionConnexion"=>["PHP/CONTROLLER/Action/","actionConnexion","formulaireDeConnexion"],
     "inscription"=>["PHP/VIEW/","formInscription","inscription"],
     "actionInscription"=>["PHP/CONTROLLER/Action/","actionInscription","formulaireDeConnexion"],
-    "Deconnexion"=>["PHP/CONTROLLER/Action/","actionDeconnexion","formulaireDeConnexion"]
+    "Deconnexion"=>["PHP/CONTROLLER/Action/","actionDeconnexion","formulaireDeConnexion"],
+    "ingredient"=>["PHP/VIEW/","formIngredient","ingredient"],
+    "actionIngredient"=>["PHP/CONTROLLER/Action/","actionIngredient","ingredient"],
 ];
 
 if (isset($_GET["codePage"]))
