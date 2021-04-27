@@ -10,22 +10,17 @@
                             <label for="ingredient">Choix d'ingerdient</label>
                         </div>
                         <div>
-                        
+                        <select name="ingredient" id="">
                                   <?php $listeIngredient = ContenusManager::getByIdRecette(2);
                                 //  var_dump($listeIngredient);
                                    foreach ($listeIngredient as $key) {
                                           $libelleIng= IngredientsManager:: findById ($key->getIdIngredient());
-                                        //   var_dump($libelleIng);
-                                      foreach ($libelleIng as $val ) {
-                                    //    echo '"<select name="ingredient" id=""><option>"'. $val->getLibelleIngredient().'"</option> </select>"';
-                                      echo  $val->getLibelleIngredient();
-                                      } 
-                                      
+                                      echo  "<option>". $libelleIng->getLibelleIngredient()."</option>";
+                                                                            
                                    } ;
                                         
                                    ?>
-                        </select>
-                            
+                            </select>
                         </div>
                     </div>
                     <div>
