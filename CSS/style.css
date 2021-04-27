@@ -4,8 +4,9 @@ html, body, header, main, div, footer, form, a, button, input{
     padding: 0;
     display: flex;
     flex:1;
-    color: rgb(255, 217, 0);
+    color: rgb(50, 10, 10);
 }
+
 
 .column, body, header, main{
     flex-direction: column;
@@ -50,6 +51,7 @@ header, footer{
 
 a, button{
     background-color: rgb(92, 44, 0);
+    color: rgb(255, 217, 0);
     border: none;
     border-radius: 0.5vh;
     margin: 5px;
