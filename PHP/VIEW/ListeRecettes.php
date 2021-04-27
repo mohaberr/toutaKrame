@@ -27,13 +27,13 @@
                             <div><img src="'.$url.'" alt="image de'.$recette->getTitreRecette().'"></div>
                             <div class="mini"></div>
                             <div class="demi column">
-                            <a href="index.php?codePage=recette&mode=detail"> <i class="fas fa-search"></i></a>';
+                            <a href="index.php?codePage=recette&mode=detail&id='.$recette->getIdRecette().'"> <i class="fas fa-search"></i></a>';
                             if (isset($_SESSION['user'])&&($_SESSION['user']->getIdRole()==1||$_SESSION['user']->getIdUser()==$recette->getIdUser())){
                                 echo'
                                 <div class="spaceHorizon"></div>
-                                <a href="index.php?codePage=recette&mode=modif"><i class="fas fa-edit"></i></a>
+                                <a href="index.php?codePage=recette&mode=modif&id='.$recette->getIdRecette().'"><i class="fas fa-edit"></i></a>
                                 <div class="spaceHorizon"></div>
-                                <a href="index.php?codePage=recette&mode=suppr"><i class="fas fa-trash"></i></a>';
+                                <a href="index.php?codePage=recette&mode=suppr&id='.$recette->getIdRecette().'"><i class="fas fa-trash"></i></a>';
                             }
 
                     echo '

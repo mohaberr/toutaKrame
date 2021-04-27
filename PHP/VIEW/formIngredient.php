@@ -3,7 +3,9 @@
     <div>
         <div></div>
         <div>
-            <form action="index.php?codePage=recette&mode=modif" method="post">
+            <?php
+            echo '<form action="index.php?codePage=actionIngredient&id='.$_GET['id'].'" method="post">';
+            ?>
                 <div class="column">
                     <div>
                         <div class="centre">
@@ -31,7 +33,7 @@
                     </div>
                     <div>
                         <div>
-                            <a href="index.php?codePage=recette&mode=modif">Annuler</a>    
+                            <?php echo'<a href="index.php?codePage=recette&mode=modif&id='.$_GET['id'].'">Annuler</a>';?>
                         </div>
                         <div>
                             <button type="submit"><i class="fas fa-plus"></i></button>

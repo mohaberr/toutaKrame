@@ -20,7 +20,7 @@ $routes=[
     "recette"=>["PHP/VIEW/","formRecette","recette"],
     "actionRecette"=>["PHP/CONTROLLER/Action/","actionRecette","recette"],
     "ingredients"=>["PHP/VIEW/","formIngredient","Ajouter un ingredient"],
-    "actionIngredient"=>["PHP/CONTROLLER/Action/","actionIngredients"]
+    "actionIngredient"=>["PHP/CONTROLLER/Action/","actionIngredients","en construction"]
 ];
 
 if (isset($_GET["codePage"]))
