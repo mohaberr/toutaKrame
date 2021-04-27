@@ -7,11 +7,12 @@
         </div>
         <div class="mini">
             <?php
-            if($titre!="Erreur"){
+            if($titre!="formulaireDeConnexion"){
                 if(isset($_SESSION['user'])){
                     echo '<a href="index.php?codePage=Deconnexion">Deconnexion</a>';
                 }else{
-                    echo '<a href="index.php?codePage=Connexion">Connexion</a>';
+                    echo '<a href="index.php?codePage=Connexion">Connexion</a>
+                    <a href="index.php?codePage=inscription">Inscription</a>';
                 }
             }
             ?>

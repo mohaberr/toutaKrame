@@ -1,13 +1,15 @@
 <?php
 var_dump ($_POST);
-if (($_POST["mdp"])==($_POST["confirmation"])) {
+if (($_POST["mdpUser"])==($_POST["confirmation"])) {
      // recherche si le pseudo existe
-     $user = UsersManager::findByPseudo($_POST['pseudo']);
+     $user = UsersManager::findByPseudo($_POST['pseudoUser']);
      if ($user == false)
      {
          $us = new users($_POST);
-         //encodage du mot de passe
+        //  encodage du mot de passe
         //  $us-> setMdpUser(crypte($us->getMdpUser()));
+        $us->setIdRole(1);
+        var_dump($us);
         UsersManager::add($us);
          echo " inscription reussit ";
      }

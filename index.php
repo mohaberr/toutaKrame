@@ -13,10 +13,10 @@ $routes=[
     "default"=>["PHP/VIEW/","ListeRecettes","Acceuil"],
     "test"=>["PHP/VIEW/","test","aaa"],
     "Connexion"=>["PHP/VIEW/","formConnexion","Connexion"],
-    "actionConnexion"=>["PHP/CONTROLLER/Action/","actionConnexion","Erreur"],
+    "actionConnexion"=>["PHP/CONTROLLER/Action/","actionConnexion","formulaireDeConnexion"],
     "inscription"=>["PHP/VIEW/","formInscription","inscription"],
-    "actionInscription"=>["PHP/CONTROLLER/Action/","actionInscription","Erreur"],
-    "Deconnexion"=>["PHP/CONTROLLER/Action/","actionDeconnexion","Erreur"]
+    "actionInscription"=>["PHP/CONTROLLER/Action/","actionInscription","formulaireDeConnexion"],
+    "Deconnexion"=>["PHP/CONTROLLER/Action/","actionDeconnexion","formulaireDeConnexion"]
 ];
 
 if (isset($_GET["codePage"]))

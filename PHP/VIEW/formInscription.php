@@ -14,7 +14,7 @@
                             <label for="pseudo"> entrer Pseudo :</label>
                         </div>
                         <div>
-                            <input type="text" name="pseudo" required />
+                            <input type="text" name="pseudoUser" required />
                         </div>
                     </div>
                     <div>
@@ -22,7 +22,7 @@
                             <label for="mdp">enter votre mot de passe :</label>
                         </div>
                         <div>
-                            <input type="password" name="mdp" required />
+                            <input type="password" name="mdpUser" required />
                         </div>
                     </div>
                     <div>
