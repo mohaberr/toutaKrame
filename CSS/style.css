@@ -50,13 +50,17 @@ header, footer{
 }
 
 a, button{
+    text-decoration: none;
     background-color: rgb(92, 44, 0);
-    color: rgb(255, 217, 0);
     border: none;
     border-radius: 0.5vh;
     margin: 5px;
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .2),
     inset -2px -2px 3px rgba(0, 0, 0, .2);
+}
+
+a, button, label{
+    color: rgb(255, 217, 0);
 }
 
 a:active, button:active{
