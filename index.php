@@ -17,7 +17,7 @@ $routes=[
     "inscription"=>["PHP/VIEW/","formInscription","inscription"],
     "actionInscription"=>["PHP/CONTROLLER/Action/","actionInscription","formulaireDeConnexion"],
     "Deconnexion"=>["PHP/CONTROLLER/Action/","actionDeconnexion","formulaireDeConnexion"],
-    "recette"=>["PHP/VIEW/","formRcette","recette"],
+    "Recettes"=>["PHP/VIEW/","formRecette","recette"],
     "actionRecette"=>["PHP/CONTROLLER/Action/","actionRecette","recette"],
 ];
 
