@@ -5,7 +5,7 @@
             <?php
                 if (isset($_SESSION['user'])){
                     echo '<div class="spaceHorizon"></div>
-                    <a href="index.php?codePage=formRecette&mode=ajout"> <i class="fas fa-plus"></i></a>';
+                    <a href="index.php?codePage=recette&mode=ajout"> <i class="fas fa-plus"></i></a>';
                 }
                 $liste=RecettesManager::getList();
                 foreach($liste as $recette){
@@ -27,13 +27,13 @@
                             <div><img src="'.$url.'" alt="image de'.$recette->getTitreRecette().'"></div>
                             <div class="mini"></div>
                             <div class="demi column">
-                            <a href="index.php?codePage=formRecette&mode=detail"> <i class="fas fa-search"></i></a>';
+                            <a href="index.php?codePage=recette&mode=detail"> <i class="fas fa-search"></i></a>';
                             if (isset($_SESSION['user'])&&($_SESSION['user']->getIdRole()==1||$_SESSION['user']->getIdUser()==$recette->getIdUser())){
                                 echo'
                                 <div class="spaceHorizon"></div>
-                                <a href="index.php?codePage=formRecette&mode=modif"><i class="fas fa-edit"></i></a>
+                                <a href="index.php?codePage=recette&mode=modif"><i class="fas fa-edit"></i></a>
                                 <div class="spaceHorizon"></div>
-                                <a href="index.php?codePage=formRecette&mode=suppr"><i class="fas fa-trash"></i></a>';
+                                <a href="index.php?codePage=recette&mode=suppr"><i class="fas fa-trash"></i></a>';
                             }
 
                     echo '
