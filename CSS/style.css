@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
-html, body, header, main, div, footer, form, a, button, input{
+html, body, header, main, div, footer, form, a, button, input, select{
     margin: 0;
     padding: 0;
     display: flex;
