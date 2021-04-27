@@ -3,14 +3,14 @@
 ?> -->
 
 <main>
-<div class="spaceHorizon"></div>
+<div class="bigSpaceHorizon"></div>
     <div>
         <div></div>
         <div>
             <form action="index.php?codePage=actionInscription" method="post">
                 <div class="column">
                     <div>
-                        <div>
+                        <div class="centre">
                             <label for="pseudo"> entrer Pseudo :</label>
                         </div>
                         <div>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div>
-                        <div>
+                        <div class="centre">
                             <label for="mdp">enter votre mot de passe :</label>
                         </div>
                         <div>
@@ -26,8 +26,8 @@
                         </div>
                     </div>
                     <div>
-                        <div>
-                            <label for="confirmation">confirmation de mot de passe </label>
+                        <div class="centre">
+                            <label for="confirmation">confirmation de mot de passe :</label>
                         </div>
                         <div>
                             <input type="password" name="confirmation" required />
@@ -46,4 +46,5 @@
         </div>
         <div></div>
     </div>
+    <div class="bigSpaceHorizon"></div>
 </main>
