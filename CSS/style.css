@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
-html, body, header, main, div, footer, form, a, button, input{
+
+html, body, header, main, div, footer, form, a, button, input, article{
     margin: 0;
     padding: 0;
     display: flex;
@@ -8,7 +9,7 @@ html, body, header, main, div, footer, form, a, button, input{
 }
 
 
-.column, body, header, main{
+.column, body, header, main, article{
     flex-direction: column;
 }
 
@@ -45,7 +46,11 @@ footer{
     align-items: center;
 }
 
-header, footer{
+.unEmCinq{
+    font-size: 1.5em;
+}
+
+header, footer, article{
     background-color: rgb(194, 71, 0);
 }
 
@@ -73,4 +78,9 @@ main{
     background-repeat: no-repeat;
     background-size:cover;
     background-position:center ;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
