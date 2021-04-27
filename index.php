@@ -19,6 +19,7 @@ $routes=[
     "Deconnexion"=>["PHP/CONTROLLER/Action/","actionDeconnexion","formulaireDeConnexion"],
     "recette"=>["PHP/VIEW/","formRcette","recette"],
     "actionRecette"=>["PHP/CONTROLLER/Action/","actionRecette","recette"],
+    "ingredients"=>["PHP/VIEW/","formIgredient","Ajouter un ingredient"]
 ];
 
 if (isset($_GET["codePage"]))

@@ -16,10 +16,10 @@ INSERT INTO `recettes` (`idRecette`, `titreRecette`, `tempRecette`, `niveauDifRe
 (1, 'patte', '00:00:10', 2, 'aaa', 'bonjour', 1),
 (2, 'thon', '00:00:20', 2, 'uu', 'fffff', 2);
 
-INSERT INTO `ingredients` (`idIngredient`, `libelleIngredient`, `quantite`, `idUnite`) VALUES
-(1, 'poivre', 2, 1),
-(2, 'sel', 2, 1),
-(3, 'farine', 1, 2);
+INSERT INTO `ingredients` (`idIngredient`, `libelleIngredient`, `idUnite`) VALUES
+(1, 'poivre', 1),
+(2, 'sel', 1),
+(3, 'farine', 2);
 
 INSERT INTO `contenus` (`idContenu`, `idIngredient`, `idRecette`, `quantite`) VALUES
 (1, 1, 2, 300),

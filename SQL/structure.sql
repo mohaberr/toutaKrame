@@ -63,7 +63,6 @@ DROP TABLE IF EXISTS Ingredients;
 CREATE TABLE Ingredients(
         idIngredient      Int  Auto_increment  NOT NULL PRIMARY KEY,
         libelleIngredient Varchar (50) NOT NULL ,
-        quantite          Float NOT NULL ,
         idUnite           Int NOT NULL
 )ENGINE=InnoDB;
 
